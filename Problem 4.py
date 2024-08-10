@@ -21,7 +21,7 @@ class RegularExpression:
                     4) A . symbol
                     5) A domain after the . symbol of either 2 to 6 character long """
 
-        pattern = r"^[a-z0-9_.]+@[a-z0-9]+\.[a-z]{2,6}"
+        pattern = r"^[a-zA-Z0-9_.]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,6}"
 
         # Condition to check the pattern matches the input
         if re.match(pattern, email_id):
